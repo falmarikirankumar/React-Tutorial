@@ -1,7 +1,7 @@
 import React from "react";
 
 const Prepbyte = () => {
-  const CodeMore = false;
+  const CodeMore = true;
   //   const CodeMore = false;
   return (
     <div>
