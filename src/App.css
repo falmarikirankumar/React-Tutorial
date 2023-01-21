@@ -15,8 +15,12 @@
   padding: 20px;
 } */
 
-button {
+/* button {
   padding: 25px;
+} */
+
+p {
+  text-decoration-line: none;
 }
 
 .App-logo {
