@@ -1,16 +1,20 @@
 // import react from "react";
 import "./App.css";
-import FirstComponent from "./Components/ContextApi/FirstComponent";
-
+// import FirstComponent from "./Components/ContextApi/FirstComponent";
+import { createContext } from "react";
+import ControlComponent from "./Components/Forms/ControlComponent";
+import UncontrolledComponent from "./Components/Forms/UncontrolledComponent";
 // import FirstStyle from "./Components/FirstStyle";
 // import { NamedExport1, NamedExport2 } from "./Components/NamedExport";
 // import CheckStatus from "./Components/Conditional/CheckStatus";
 // import Prepbyte from "./Components/Conditional/Prepbyte";
 // import RouteFile from "./Components/Routings/RouteFile";
 
+const Age = createContext();
 const App = () => {
   // const Name = "Kirankumar";
   // const age = 22;
+
   return (
     // FirstStyle
     // <div>
@@ -35,10 +39,17 @@ const App = () => {
     // {/* <RouteFile /> */}
     // {/* </div> */}
 
-    <div>
-      <FirstComponent />
-    </div>
+    // <div>
+    //   <Age.Provider value={age}>
+    //     <FirstComponent />
+    //   </Age.Provider>
+    // </div>
+    <>
+      <ControlComponent />
+      <UncontrolledComponent />
+    </>
   );
 };
 
+export { Age };
 export default App;
