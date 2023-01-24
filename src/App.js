@@ -2,8 +2,10 @@
 import "./App.css";
 // import FirstComponent from "./Components/ContextApi/FirstComponent";
 import { createContext } from "react";
-import ControlComponent from "./Components/Forms/ControlComponent";
-import UncontrolledComponent from "./Components/Forms/UncontrolledComponent";
+import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
+import MouseOverCounter from "./Components/HigherOrderComponent/MouseOverCounter";
+// import ControlComponent from "./Components/Forms/ControlComponent";
+// import UncontrolledComponent from "./Components/Forms/UncontrolledComponent";
 // import FirstStyle from "./Components/FirstStyle";
 // import { NamedExport1, NamedExport2 } from "./Components/NamedExport";
 // import CheckStatus from "./Components/Conditional/CheckStatus";
@@ -44,9 +46,13 @@ const App = () => {
     //     <FirstComponent />
     //   </Age.Provider>
     // </div>
+    // <>
+    //   <ControlComponent />
+    //   <UncontrolledComponent />
+    // </>
     <>
-      <ControlComponent />
-      <UncontrolledComponent />
+      <ClickCounter />
+      <MouseOverCounter />
     </>
   );
 };
