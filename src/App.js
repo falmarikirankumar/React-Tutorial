@@ -2,8 +2,8 @@
 import "./App.css";
 // import FirstComponent from "./Components/ContextApi/FirstComponent";
 import { createContext } from "react";
-import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
-import MouseOverCounter from "./Components/HigherOrderComponent/MouseOverCounter";
+// import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
+// import MouseOverCounter from "./Components/HigherOrderComponent/MouseOverCounter";
 // import ControlComponent from "./Components/Forms/ControlComponent";
 // import UncontrolledComponent from "./Components/Forms/UncontrolledComponent";
 // import FirstStyle from "./Components/FirstStyle";
@@ -11,6 +11,7 @@ import MouseOverCounter from "./Components/HigherOrderComponent/MouseOverCounter
 // import CheckStatus from "./Components/Conditional/CheckStatus";
 // import Prepbyte from "./Components/Conditional/Prepbyte";
 // import RouteFile from "./Components/Routings/RouteFile";
+import FetchingData from "./Components/ApiCalling/FetchingData";
 
 const Age = createContext();
 const App = () => {
@@ -51,8 +52,9 @@ const App = () => {
     //   <UncontrolledComponent />
     // </>
     <>
-      <ClickCounter />
-      <MouseOverCounter />
+      {/* <ClickCounter />
+      <MouseOverCounter /> */}
+      <FetchingData />
     </>
   );
 };
