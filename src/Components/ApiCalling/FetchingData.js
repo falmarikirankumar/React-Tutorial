@@ -1,23 +1,25 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-// import axios from "axios";
+import axios from "axios";
 const FetchingData = () => {
   const [data, setDate] = useState([]);
-  //   const [data, setDate] = useState("");
 
-  //   useEffect(() => {
-  //     axios("https://jsonplaceholder.typicode.com/users")
-  //       .then((response) => setDate(response))
-  //       .catch((error) => console.log(error));
-  //   }, []);
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((response) => setDate(response))
+    // fetch("https://jsonplaceholder.typicode.com/users")
+    //   .then((response) => response.json())
+    //   .then((response) => setDate(response))
+    //   .catch((error) => console.log(error));
+
+    axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then((response) => {
+        console.log(response.data);
+        setDate(response.data);
+      })
       .catch((error) => console.log(error));
   }, []);
-  console.log(data);
+  // console.log(data);
 
   return (
     <div>
